@@ -10,7 +10,6 @@ Run with:
     python3 test_normalizer.py
 """
 import sys
-sys.path.append('~/fineval')
 
 from fineval.scorers.normalizer import normalize_and_compare
 

@@ -241,7 +241,7 @@ translates directly into higher cost for almost no accuracy benefit on these tas
 
 nb['cells'] = cells
 
-with open('analysis_notebook.ipynb', 'w') as f:
+with open('notebooks/analysis_notebook.ipynb', 'w') as f:
     nbf.write(nb, f)
 
 print('Notebook written to analysis_notebook.ipynb')

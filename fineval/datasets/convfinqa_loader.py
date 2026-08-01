@@ -4,10 +4,9 @@ Loads ChanceFocus/flare-convfinqa from HuggingFace and returns a list of EvalIte
 Each item represents one turn in a conversation, with full history included.
 """
 import sys
-sys.path.append('~/fineval')
 
 from datasets import load_dataset
-from DataStructures import EvalItem, TaskType
+from fineval.data_structures import EvalItem, TaskType
 
 
 def load_convfinqa(split: str = "train", max_items: int = None) -> list[EvalItem]:

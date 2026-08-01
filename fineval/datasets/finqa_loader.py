@@ -3,10 +3,9 @@ FinQA loader.
 Loads ChanceFocus/flare-finqa from HuggingFace and returns a list of EvalItem objects.
 """
 import sys
-sys.path.append('~/fineval')
 
 from datasets import load_dataset
-from DataStructures import EvalItem, TaskType
+from fineval.data_structures import EvalItem, TaskType
 
 
 def load_finqa(split: str = "train", max_items: int = None) -> list[EvalItem]:

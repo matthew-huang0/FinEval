@@ -6,7 +6,6 @@ Already defined in DataStructures.py as LLMJudgeScorer.
 """
 import os
 import sys
-sys.path.append('~/fineval')
 
 from openai import OpenAI
 

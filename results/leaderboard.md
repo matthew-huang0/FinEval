@@ -1,5 +1,5 @@
 # FinEval Leaderboard
-Generated: 2026-07-31 17:58
+Generated: 2026-07-31 19:01
 
 | Model | Dataset | Task | Items | Accuracy | F1/Mean Score | P50 Latency | Cost (cents) |
 |-------|---------|------|-------|----------|---------------|-------------|--------------|

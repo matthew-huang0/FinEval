@@ -9,7 +9,6 @@ Output is saved as JSON that custom_loader.py reads.
 import os
 import sys
 import json
-sys.path.append('~/fineval')
 
 from custom_dataset_source import COMPANY_DATA
 

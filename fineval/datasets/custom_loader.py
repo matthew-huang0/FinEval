@@ -6,9 +6,8 @@ so it flows through the runner, scorer, and leaderboard unchanged.
 """
 import json
 import sys
-sys.path.append('~/fineval')
 
-from DataStructures import EvalItem, TaskType
+from fineval.data_structures import EvalItem, TaskType
 
 CUSTOM_DATASET_PATH = "~/fineval/fineval/datasets/custom/custom_dataset.json"
 

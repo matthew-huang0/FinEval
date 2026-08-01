@@ -3,9 +3,8 @@ Financial PhraseBank loader.
 Reads Sentences_AllAgree.txt and returns a list of EvalItem objects.
 """
 import sys
-sys.path.append('~/fineval')
 
-from DataStructures import EvalItem, TaskType
+from fineval.data_structures import EvalItem, TaskType
 
 
 FINPB_PATH = "~/Downloads/FinancialPhraseBank-v1.0/Sentences_AllAgree.txt"

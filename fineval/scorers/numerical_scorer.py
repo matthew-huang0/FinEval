@@ -4,7 +4,6 @@ Uses the standalone normalizer to compare predicted
 and expected answers before scoring.
 """
 import sys
-sys.path.append('~/fineval')
 
 from fineval.scorers.normalizer import normalize_and_compare, is_yes_no
 

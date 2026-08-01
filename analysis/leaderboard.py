@@ -10,9 +10,8 @@ import os
 import glob
 import sys
 from datetime import datetime
-sys.path.append('~/fineval')
 
-from DataStructures import Leaderboard, LeaderboardEntry, TaskType
+from fineval.data_structures import Leaderboard, LeaderboardEntry, TaskType
 
 
 # map dataset names to task types

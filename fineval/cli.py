@@ -9,12 +9,11 @@ import argparse
 import json
 import os
 import sys
-sys.path.append('~/fineval')
 
 from fineval.datasets.finpb_loader import load_finpb
 from fineval.datasets.finqa_loader import load_finqa
 from fineval.datasets.convfinqa_loader import load_convfinqa
-from runner import run_eval, print_metrics
+from fineval.runner import run_eval, print_metrics
 
 
 def load_dataset(name: str, max_items: int):

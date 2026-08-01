@@ -8,11 +8,10 @@ import os
 import sys
 import time
 from urllib import response
-sys.path.append('~/fineval')
 
 from openai import OpenAI
 from datetime import datetime
-from DataStructures import EvalItem, EvalResult, LLMResponse, TaskType
+from fineval.data_structures import EvalItem, EvalResult, LLMResponse, TaskType
 from fineval.scorers.numerical_scorer import NumericalScorer
 from fineval.scorers.classification_scorer import ClassificationScorer
 

@@ -1,15 +1,15 @@
 model_id,dataset_name,task_type,n_items,accuracy,mean_score,p50_latency_ms,p95_latency_ms,total_cost_cents,cost_per_correct_cents
-gpt-oss-120b,convfinqa,multiturn_qa,500,0.8040,0.8068,472,1655,0.0000,0.0000
 gpt-oss-120b,finpb,classification,500,0.9840,0.9840,270,56429,0.0000,0.0000
 gpt-oss-120b,finqa,numerical_qa,500,0.6980,0.7129,463,1065,0.0000,0.0000
+gpt-oss-120b,convfinqa,multiturn_qa,500,0.8040,0.8068,472,1655,0.0000,0.0000
 gemma-4-31b,custom,numerical_qa,91,0.9890,0.9890,489,57343,0.0000,0.0000
 gpt-oss-120b,custom,numerical_qa,91,0.9011,0.9011,520,56395,0.0000,0.0000
 llama3.2:1b,custom,numerical_qa,91,0.4505,0.5249,237,296,0.0000,0.0000
 TF-IDF + Logistic Regression,finpb,classification,453,0.8786,0.8731,0,0,0.0000,0.0000
 TF-IDF + XGBoost,finpb,classification,453,0.9095,0.9058,0,0,0.0000,0.0000
-gemma-4-31b,convfinqa,multiturn_qa,500,0.8180,0.8207,433,2912,0.0000,0.0000
 gemma-4-31b,finpb,classification,500,0.9920,0.9920,374,55494,0.0000,0.0000
 gemma-4-31b,finqa,numerical_qa,500,0.6320,0.6387,410,1590,0.0000,0.0000
-llama3.2:1b,convfinqa,multiturn_qa,500,0.1960,0.2005,259,1214,0.0000,0.0000
+gemma-4-31b,convfinqa,multiturn_qa,500,0.8180,0.8207,433,2912,0.0000,0.0000
 llama3.2:1b,finpb,classification,500,0.8260,0.8260,201,228,0.0000,0.0000
 llama3.2:1b,finqa,numerical_qa,500,0.0280,0.0337,914,1758,0.0000,0.0000
+llama3.2:1b,convfinqa,multiturn_qa,500,0.1960,0.2005,259,1214,0.0000,0.0000
