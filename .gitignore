@@ -1,0 +1,14 @@
+# virtual environments
+venv/
+.venv/
+
+# python cache
+__pycache__/
+*.pyc
+
+# mac
+.DS_Store
+
+# local backups (keep locally, don't publish)
+results-backup-20item/
+results-week7-custom/

@@ -1,0 +1,38 @@
+[
+  {
+    "model": "gpt-oss-120b",
+    "n_items": 1500,
+    "accuracy": 82.86666666666666,
+    "tokens_in": 1182731,
+    "tokens_out": 345512,
+    "total_tokens": 1528243,
+    "total_cost_usd": 0.67308985,
+    "cost_per_correct_usd": 0.0005415043041029767,
+    "cost_per_1k_items_usd": 0.44872656666666666,
+    "source": "Cerebras published rate"
+  },
+  {
+    "model": "gemma-4-31b",
+    "n_items": 1500,
+    "accuracy": 81.39999999999999,
+    "tokens_in": 1245100,
+    "tokens_out": 9887,
+    "total_tokens": 1254987,
+    "total_cost_usd": 0.10118992000000002,
+    "cost_per_correct_usd": 8.287462735462737e-05,
+    "cost_per_1k_items_usd": 0.06745994666666669,
+    "source": "proxy: Gemma 3 27B market rate"
+  },
+  {
+    "model": "llama3.2:1b",
+    "n_items": 1500,
+    "accuracy": 35.0,
+    "tokens_in": 1143444,
+    "tokens_out": 5587,
+    "total_tokens": 1149031,
+    "total_cost_usd": 0.02309236,
+    "cost_per_correct_usd": 4.3985447619047615e-05,
+    "cost_per_1k_items_usd": 0.015394906666666666,
+    "source": "Meta Llama 3.2 1B cheapest host"
+  }
+]

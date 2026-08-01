@@ -1,0 +1,730 @@
+[
+  {
+    "id": "custom-aapl-0",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was Apple Inc.'s total revenue in fiscal 2023, in millions?",
+    "answer": "383285",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-1",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was Apple Inc.'s net income in fiscal 2023, in millions?",
+    "answer": "96995",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-2",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was Apple Inc.'s operating income in fiscal 2023, in millions?",
+    "answer": "114301",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-3",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was Apple Inc.'s research and development expense in fiscal 2023, in millions?",
+    "answer": "29915",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-4",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was Apple Inc.'s gross margin in fiscal 2023, in millions?",
+    "answer": "169148",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-5",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was Apple Inc.'s net income as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.25306",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-6",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was Apple Inc.'s operating margin in fiscal 2023? Express as a decimal.",
+    "answer": "0.29821",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-7",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was Apple Inc.'s gross margin as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.44131",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-8",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was Apple Inc.'s research and development expense as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.07805",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-9",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What proportion of Apple Inc.'s total revenue came from iPhone in fiscal 2023? Express as a decimal.",
+    "answer": "0.52333",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-10",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What proportion of Apple Inc.'s total revenue came from Services in fiscal 2023? Express as a decimal.",
+    "answer": "0.22229",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-11",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What proportion of Apple Inc.'s total revenue came from Mac in fiscal 2023? Express as a decimal.",
+    "answer": "0.07659",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-12",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was the growth rate in Apple Inc.'s net income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.02814",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-13",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was the growth rate in Apple Inc.'s total revenue from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.02800",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-aapl-14",
+    "context": "Apple Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 383285\n- iphone sales: 200583\n- mac sales: 29357\n- ipad sales: 28300\n- wearables home accessories sales: 39845\n- services sales: 85200\n- total cost of sales: 214137\n- gross margin: 169148\n- research and development: 29915\n- selling general administrative: 24932\n- total operating expenses: 54847\n- operating income: 114301\n- net income: 96995\n- provision for income taxes: 16741\n\nApple Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 394328\n- net income (2022): 99803\n- operating income (2022): 119437",
+    "question": "What was the growth rate in Apple Inc.'s operating income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.04300",
+    "company": "Apple Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-11-03"
+  },
+  {
+    "id": "custom-msft-0",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was Microsoft Corporation's total revenue in fiscal 2023, in millions?",
+    "answer": "211915",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-1",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was Microsoft Corporation's net income in fiscal 2023, in millions?",
+    "answer": "72361",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-2",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was Microsoft Corporation's operating income in fiscal 2023, in millions?",
+    "answer": "88523",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-3",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was Microsoft Corporation's gross margin in fiscal 2023, in millions?",
+    "answer": "146052",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-4",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was Microsoft Corporation's net income as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.34146",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-5",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was Microsoft Corporation's operating margin in fiscal 2023? Express as a decimal.",
+    "answer": "0.41773",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-6",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was Microsoft Corporation's gross margin as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.68920",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-7",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What proportion of Microsoft Corporation's total revenue came from Intelligent Cloud in fiscal 2023? Express as a decimal.",
+    "answer": "0.41482",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-8",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What proportion of Microsoft Corporation's total revenue came from Productivity and Business Processes in fiscal 2023? Express as a decimal.",
+    "answer": "0.32690",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-9",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was the growth rate in Microsoft Corporation's net income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.00518",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-10",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was the growth rate in Microsoft Corporation's total revenue from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.06882",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-msft-11",
+    "context": "Microsoft Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenue: 211915\n- productivity business processes revenue: 69274\n- intelligent cloud revenue: 87907\n- more personal computing revenue: 54734\n- gross margin: 146052\n- operating income: 88523\n- net income: 72361\n\nMicrosoft Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 198270\n- net income (2022): 72738\n- operating income (2022): 83383",
+    "question": "What was the growth rate in Microsoft Corporation's operating income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.06164",
+    "company": "Microsoft Corporation",
+    "source": "SEC EDGAR 10-K filed 2023-07-27"
+  },
+  {
+    "id": "custom-tsla-0",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was Tesla, Inc.'s total revenue in fiscal 2023, in millions?",
+    "answer": "96773",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-1",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was Tesla, Inc.'s net income in fiscal 2023, in millions?",
+    "answer": "14997",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-2",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was Tesla, Inc.'s operating income in fiscal 2023, in millions?",
+    "answer": "8891",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-3",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was Tesla, Inc.'s research and development expense in fiscal 2023, in millions?",
+    "answer": "3969",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-4",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was Tesla, Inc.'s gross profit in fiscal 2023, in millions?",
+    "answer": "17660",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-5",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was Tesla, Inc.'s net income as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.15497",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-6",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was Tesla, Inc.'s operating margin in fiscal 2023? Express as a decimal.",
+    "answer": "0.09187",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-7",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was Tesla, Inc.'s gross profit as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.18249",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-8",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was Tesla, Inc.'s research and development expense as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.04101",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-9",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What proportion of Tesla, Inc.'s total revenue came from automotive in fiscal 2023? Express as a decimal.",
+    "answer": "0.85167",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-10",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was the growth rate in Tesla, Inc.'s net income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.19441",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-11",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was the growth rate in Tesla, Inc.'s total revenue from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.18795",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-tsla-12",
+    "context": "Tesla, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenue: 96773\n- automotive revenue: 82419\n- energy generation storage revenue: 6035\n- services and other revenue: 8319\n- gross profit: 17660\n- research and development: 3969\n- operating income: 8891\n- net income: 14997\n\nTesla, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenue (2022): 81462\n- net income (2022): 12556\n- operating income (2022): 13656",
+    "question": "What was the growth rate in Tesla, Inc.'s operating income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.34893",
+    "company": "Tesla, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-01-26"
+  },
+  {
+    "id": "custom-ko-0",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was The Coca-Cola Company's total revenue in fiscal 2023, in millions?",
+    "answer": "45754",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-ko-1",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was The Coca-Cola Company's net income in fiscal 2023, in millions?",
+    "answer": "10714",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-ko-2",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was The Coca-Cola Company's operating income in fiscal 2023, in millions?",
+    "answer": "11311",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-ko-3",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was The Coca-Cola Company's gross profit in fiscal 2023, in millions?",
+    "answer": "27234",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-ko-4",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was The Coca-Cola Company's net income as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.23417",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-ko-5",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was The Coca-Cola Company's operating margin in fiscal 2023? Express as a decimal.",
+    "answer": "0.24721",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-ko-6",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was The Coca-Cola Company's gross profit as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.59523",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-ko-7",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was the growth rate in The Coca-Cola Company's net income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.12283",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-ko-8",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was the growth rate in The Coca-Cola Company's total revenue from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.06395",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-ko-9",
+    "context": "The Coca-Cola Company fiscal year 2023 financial results (in millions of USD):\n- net operating revenues: 45754\n- cost of goods sold: 18520\n- gross profit: 27234\n- selling general administrative: 13972\n- operating income: 11311\n- net income: 10714\n\nThe Coca-Cola Company fiscal year 2022 figures for comparison (in millions of USD):\n- net operating revenues (2022): 43004\n- net income (2022): 9542\n- operating income (2022): 10909",
+    "question": "What was the growth rate in The Coca-Cola Company's operating income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.03685",
+    "company": "The Coca-Cola Company",
+    "source": "SEC EDGAR 10-K filed 2024-02-20"
+  },
+  {
+    "id": "custom-nke-0",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was NIKE, Inc.'s total revenue in fiscal 2023, in millions?",
+    "answer": "51217",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-1",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was NIKE, Inc.'s net income in fiscal 2023, in millions?",
+    "answer": "5070",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-2",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was NIKE, Inc.'s operating income in fiscal 2023, in millions?",
+    "answer": "5915",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-3",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was NIKE, Inc.'s gross profit in fiscal 2023, in millions?",
+    "answer": "22292",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-4",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was NIKE, Inc.'s net income as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.09899",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-5",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was NIKE, Inc.'s operating margin in fiscal 2023? Express as a decimal.",
+    "answer": "0.11549",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-6",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was NIKE, Inc.'s gross profit as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.43525",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-7",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What proportion of NIKE, Inc.'s total revenue came from North America in fiscal 2023? Express as a decimal.",
+    "answer": "0.42189",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-8",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What proportion of NIKE, Inc.'s total revenue came from Greater China in fiscal 2023? Express as a decimal.",
+    "answer": "0.14152",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-9",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was the growth rate in NIKE, Inc.'s net income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.16143",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-10",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was the growth rate in NIKE, Inc.'s total revenue from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.09649",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-nke-11",
+    "context": "NIKE, Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 51217\n- north america revenue: 21608\n- emea revenue: 13418\n- greater china revenue: 7248\n- gross profit: 22292\n- operating income: 5915\n- net income: 5070\n\nNIKE, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 46710\n- net income (2022): 6046\n- operating income (2022): 6935",
+    "question": "What was the growth rate in NIKE, Inc.'s operating income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.14708",
+    "company": "NIKE, Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-07-20"
+  },
+  {
+    "id": "custom-amzn-0",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was Amazon.com, Inc.'s total revenue in fiscal 2023, in millions?",
+    "answer": "574785",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-amzn-1",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was Amazon.com, Inc.'s net income in fiscal 2023, in millions?",
+    "answer": "30425",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-amzn-2",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was Amazon.com, Inc.'s operating income in fiscal 2023, in millions?",
+    "answer": "36852",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-amzn-3",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was Amazon.com, Inc.'s gross profit in fiscal 2023, in millions?",
+    "answer": "270046",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-amzn-4",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was Amazon.com, Inc.'s net income as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.05293",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-amzn-5",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was Amazon.com, Inc.'s operating margin in fiscal 2023? Express as a decimal.",
+    "answer": "0.06411",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-amzn-6",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was Amazon.com, Inc.'s gross profit as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.46982",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-amzn-7",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was the growth rate in Amazon.com, Inc.'s net income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "12.17744",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-amzn-8",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was the growth rate in Amazon.com, Inc.'s total revenue from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.11830",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-amzn-9",
+    "context": "Amazon.com, Inc. fiscal year 2023 financial results (in millions of USD):\n- total net sales: 574785\n- gross profit: 270046\n- operating income: 36852\n- net income: 30425\n\nAmazon.com, Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total net sales (2022): 513983\n- net income (2022): -2722\n- operating income (2022): 12248",
+    "question": "What was the growth rate in Amazon.com, Inc.'s operating income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "2.00882",
+    "company": "Amazon.com, Inc.",
+    "source": "SEC EDGAR 10-K filed 2024-02-01"
+  },
+  {
+    "id": "custom-jpm-0",
+    "context": "JPMorgan Chase & Co. fiscal year 2023 financial results (in millions of USD):\n- total net revenue: 158104\n- net interest income: 89267\n- noninterest revenue: 68837\n- noninterest expense: 87172\n- net income: 49552\n\nJPMorgan Chase & Co. fiscal year 2022 figures for comparison (in millions of USD):\n- total net revenue (2022): 128695\n- net income (2022): 37676",
+    "question": "What was JPMorgan Chase & Co.'s total revenue in fiscal 2023, in millions?",
+    "answer": "158104",
+    "company": "JPMorgan Chase & Co.",
+    "source": "SEC EDGAR 10-K filed 2024-02-16"
+  },
+  {
+    "id": "custom-jpm-1",
+    "context": "JPMorgan Chase & Co. fiscal year 2023 financial results (in millions of USD):\n- total net revenue: 158104\n- net interest income: 89267\n- noninterest revenue: 68837\n- noninterest expense: 87172\n- net income: 49552\n\nJPMorgan Chase & Co. fiscal year 2022 figures for comparison (in millions of USD):\n- total net revenue (2022): 128695\n- net income (2022): 37676",
+    "question": "What was JPMorgan Chase & Co.'s net income in fiscal 2023, in millions?",
+    "answer": "49552",
+    "company": "JPMorgan Chase & Co.",
+    "source": "SEC EDGAR 10-K filed 2024-02-16"
+  },
+  {
+    "id": "custom-jpm-2",
+    "context": "JPMorgan Chase & Co. fiscal year 2023 financial results (in millions of USD):\n- total net revenue: 158104\n- net interest income: 89267\n- noninterest revenue: 68837\n- noninterest expense: 87172\n- net income: 49552\n\nJPMorgan Chase & Co. fiscal year 2022 figures for comparison (in millions of USD):\n- total net revenue (2022): 128695\n- net income (2022): 37676",
+    "question": "What was JPMorgan Chase & Co.'s net income as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.31341",
+    "company": "JPMorgan Chase & Co.",
+    "source": "SEC EDGAR 10-K filed 2024-02-16"
+  },
+  {
+    "id": "custom-jpm-3",
+    "context": "JPMorgan Chase & Co. fiscal year 2023 financial results (in millions of USD):\n- total net revenue: 158104\n- net interest income: 89267\n- noninterest revenue: 68837\n- noninterest expense: 87172\n- net income: 49552\n\nJPMorgan Chase & Co. fiscal year 2022 figures for comparison (in millions of USD):\n- total net revenue (2022): 128695\n- net income (2022): 37676",
+    "question": "What proportion of JPMorgan Chase & Co.'s total revenue came from net interest income in fiscal 2023? Express as a decimal.",
+    "answer": "0.56461",
+    "company": "JPMorgan Chase & Co.",
+    "source": "SEC EDGAR 10-K filed 2024-02-16"
+  },
+  {
+    "id": "custom-jpm-4",
+    "context": "JPMorgan Chase & Co. fiscal year 2023 financial results (in millions of USD):\n- total net revenue: 158104\n- net interest income: 89267\n- noninterest revenue: 68837\n- noninterest expense: 87172\n- net income: 49552\n\nJPMorgan Chase & Co. fiscal year 2022 figures for comparison (in millions of USD):\n- total net revenue (2022): 128695\n- net income (2022): 37676",
+    "question": "What was the growth rate in JPMorgan Chase & Co.'s net income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.31521",
+    "company": "JPMorgan Chase & Co.",
+    "source": "SEC EDGAR 10-K filed 2024-02-16"
+  },
+  {
+    "id": "custom-jpm-5",
+    "context": "JPMorgan Chase & Co. fiscal year 2023 financial results (in millions of USD):\n- total net revenue: 158104\n- net interest income: 89267\n- noninterest revenue: 68837\n- noninterest expense: 87172\n- net income: 49552\n\nJPMorgan Chase & Co. fiscal year 2022 figures for comparison (in millions of USD):\n- total net revenue (2022): 128695\n- net income (2022): 37676",
+    "question": "What was the growth rate in JPMorgan Chase & Co.'s total revenue from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.22852",
+    "company": "JPMorgan Chase & Co.",
+    "source": "SEC EDGAR 10-K filed 2024-02-16"
+  },
+  {
+    "id": "custom-wmt-0",
+    "context": "Walmart Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 611289\n- net sales: 605881\n- operating income: 20428\n- net income: 11292\n\nWalmart Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 572754\n- net income (2022): 13940\n- operating income (2022): 25942",
+    "question": "What was Walmart Inc.'s total revenue in fiscal 2023, in millions?",
+    "answer": "611289",
+    "company": "Walmart Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-03-17"
+  },
+  {
+    "id": "custom-wmt-1",
+    "context": "Walmart Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 611289\n- net sales: 605881\n- operating income: 20428\n- net income: 11292\n\nWalmart Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 572754\n- net income (2022): 13940\n- operating income (2022): 25942",
+    "question": "What was Walmart Inc.'s net income in fiscal 2023, in millions?",
+    "answer": "11292",
+    "company": "Walmart Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-03-17"
+  },
+  {
+    "id": "custom-wmt-2",
+    "context": "Walmart Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 611289\n- net sales: 605881\n- operating income: 20428\n- net income: 11292\n\nWalmart Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 572754\n- net income (2022): 13940\n- operating income (2022): 25942",
+    "question": "What was Walmart Inc.'s operating income in fiscal 2023, in millions?",
+    "answer": "20428",
+    "company": "Walmart Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-03-17"
+  },
+  {
+    "id": "custom-wmt-3",
+    "context": "Walmart Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 611289\n- net sales: 605881\n- operating income: 20428\n- net income: 11292\n\nWalmart Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 572754\n- net income (2022): 13940\n- operating income (2022): 25942",
+    "question": "What was Walmart Inc.'s net income as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.01847",
+    "company": "Walmart Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-03-17"
+  },
+  {
+    "id": "custom-wmt-4",
+    "context": "Walmart Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 611289\n- net sales: 605881\n- operating income: 20428\n- net income: 11292\n\nWalmart Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 572754\n- net income (2022): 13940\n- operating income (2022): 25942",
+    "question": "What was Walmart Inc.'s operating margin in fiscal 2023? Express as a decimal.",
+    "answer": "0.03342",
+    "company": "Walmart Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-03-17"
+  },
+  {
+    "id": "custom-wmt-5",
+    "context": "Walmart Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 611289\n- net sales: 605881\n- operating income: 20428\n- net income: 11292\n\nWalmart Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 572754\n- net income (2022): 13940\n- operating income (2022): 25942",
+    "question": "What was the growth rate in Walmart Inc.'s net income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.18996",
+    "company": "Walmart Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-03-17"
+  },
+  {
+    "id": "custom-wmt-6",
+    "context": "Walmart Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 611289\n- net sales: 605881\n- operating income: 20428\n- net income: 11292\n\nWalmart Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 572754\n- net income (2022): 13940\n- operating income (2022): 25942",
+    "question": "What was the growth rate in Walmart Inc.'s total revenue from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "0.06728",
+    "company": "Walmart Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-03-17"
+  },
+  {
+    "id": "custom-wmt-7",
+    "context": "Walmart Inc. fiscal year 2023 financial results (in millions of USD):\n- total revenues: 611289\n- net sales: 605881\n- operating income: 20428\n- net income: 11292\n\nWalmart Inc. fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues (2022): 572754\n- net income (2022): 13940\n- operating income (2022): 25942",
+    "question": "What was the growth rate in Walmart Inc.'s operating income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.21255",
+    "company": "Walmart Inc.",
+    "source": "SEC EDGAR 10-K filed 2023-03-17"
+  },
+  {
+    "id": "custom-xom-0",
+    "context": "Exxon Mobil Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenues and other income: 344582\n- net income: 36010\n\nExxon Mobil Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues and other income (2022): 413680\n- net income (2022): 55740",
+    "question": "What was Exxon Mobil Corporation's total revenue in fiscal 2023, in millions?",
+    "answer": "344582",
+    "company": "Exxon Mobil Corporation",
+    "source": "SEC EDGAR 10-K filed 2024-02-28"
+  },
+  {
+    "id": "custom-xom-1",
+    "context": "Exxon Mobil Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenues and other income: 344582\n- net income: 36010\n\nExxon Mobil Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues and other income (2022): 413680\n- net income (2022): 55740",
+    "question": "What was Exxon Mobil Corporation's net income in fiscal 2023, in millions?",
+    "answer": "36010",
+    "company": "Exxon Mobil Corporation",
+    "source": "SEC EDGAR 10-K filed 2024-02-28"
+  },
+  {
+    "id": "custom-xom-2",
+    "context": "Exxon Mobil Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenues and other income: 344582\n- net income: 36010\n\nExxon Mobil Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues and other income (2022): 413680\n- net income (2022): 55740",
+    "question": "What was Exxon Mobil Corporation's net income as a proportion of total revenue in fiscal 2023? Express as a decimal.",
+    "answer": "0.10450",
+    "company": "Exxon Mobil Corporation",
+    "source": "SEC EDGAR 10-K filed 2024-02-28"
+  },
+  {
+    "id": "custom-xom-3",
+    "context": "Exxon Mobil Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenues and other income: 344582\n- net income: 36010\n\nExxon Mobil Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues and other income (2022): 413680\n- net income (2022): 55740",
+    "question": "What was the growth rate in Exxon Mobil Corporation's net income from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.35396",
+    "company": "Exxon Mobil Corporation",
+    "source": "SEC EDGAR 10-K filed 2024-02-28"
+  },
+  {
+    "id": "custom-xom-4",
+    "context": "Exxon Mobil Corporation fiscal year 2023 financial results (in millions of USD):\n- total revenues and other income: 344582\n- net income: 36010\n\nExxon Mobil Corporation fiscal year 2022 figures for comparison (in millions of USD):\n- total revenues and other income (2022): 413680\n- net income (2022): 55740",
+    "question": "What was the growth rate in Exxon Mobil Corporation's total revenue from fiscal 2022 to fiscal 2023? Express as a decimal.",
+    "answer": "-0.16703",
+    "company": "Exxon Mobil Corporation",
+    "source": "SEC EDGAR 10-K filed 2024-02-28"
+  }
+]

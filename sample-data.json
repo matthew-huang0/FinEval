@@ -1,0 +1,199 @@
+{
+  "datasets": [
+    {
+      "name": "finqa-sample",
+      "task_type": "numerical_qa",
+      "description": "Numerical reasoning over financial reports — synthetic items shaped like FinQA.",
+      "license": "Synthetic; replace with real FinQA from HuggingFace before final eval.",
+      "source_url": "https://huggingface.co/datasets/ChanceFocus/finqa",
+      "items": [
+        {
+          "id": "finqa-sample-001",
+          "task_type": "numerical_qa",
+          "input": {
+            "context": "In fiscal year 2025, the company reported total revenue of $4,820 million, up from $4,210 million in fiscal year 2024. Operating expenses for fiscal year 2025 were $3,640 million.",
+            "question": "What was the year-over-year revenue growth rate?"
+          },
+          "expected_output": 0.1449,
+          "metadata": {"answer_unit": "ratio", "tolerance": 0.001}
+        },
+        {
+          "id": "finqa-sample-002",
+          "task_type": "numerical_qa",
+          "input": {
+            "context": "The company repurchased 8.4 million shares for an aggregate cost of $1.26 billion during the year.",
+            "question": "What was the average price per share repurchased?"
+          },
+          "expected_output": 150.0,
+          "metadata": {"answer_unit": "usd", "tolerance": 0.5}
+        },
+        {
+          "id": "finqa-sample-003",
+          "task_type": "numerical_qa",
+          "input": {
+            "context": "Segment A reported revenue of $2,100M (45% of total). Segment B reported revenue of $1,540M (33%). Segment C accounted for the remainder.",
+            "question": "What was Segment C's revenue in millions?"
+          },
+          "expected_output": 1027.0,
+          "metadata": {"answer_unit": "usd_millions", "tolerance": 5.0}
+        },
+        {
+          "id": "finqa-sample-004",
+          "task_type": "numerical_qa",
+          "input": {
+            "context": "Operating margin was 24.5% in 2025 on revenue of $4,820M. In 2024 operating margin was 22.1% on revenue of $4,210M.",
+            "question": "By how many million dollars did operating income increase year-over-year?"
+          },
+          "expected_output": 250.41,
+          "metadata": {"answer_unit": "usd_millions", "tolerance": 2.0}
+        },
+        {
+          "id": "finqa-sample-005",
+          "task_type": "numerical_qa",
+          "input": {
+            "context": "The 10-year notes were issued at par with a coupon of 4.875%. The total principal raised was $1.5 billion.",
+            "question": "What is the annual interest expense on these notes in millions?"
+          },
+          "expected_output": 73.125,
+          "metadata": {"answer_unit": "usd_millions", "tolerance": 0.5}
+        }
+      ]
+    },
+    {
+      "name": "finpb-sample",
+      "task_type": "classification",
+      "description": "Sentiment classification on finance news sentences — synthetic items shaped like Financial PhraseBank.",
+      "license": "Synthetic; replace with real FPB (CC BY-NC-SA 3.0, research-only) for final eval.",
+      "source_url": "https://huggingface.co/datasets/financial_phrasebank",
+      "items": [
+        {
+          "id": "finpb-sample-001",
+          "task_type": "classification",
+          "input": {"text": "The company raised its full-year guidance, citing stronger-than-expected demand in Europe.",
+                    "labels": ["positive", "neutral", "negative"]},
+          "expected_output": "positive",
+          "metadata": {}
+        },
+        {
+          "id": "finpb-sample-002",
+          "task_type": "classification",
+          "input": {"text": "Operating margins compressed to 18.4% from 22.1% on higher input costs and an unfavorable product mix.",
+                    "labels": ["positive", "neutral", "negative"]},
+          "expected_output": "negative",
+          "metadata": {}
+        },
+        {
+          "id": "finpb-sample-003",
+          "task_type": "classification",
+          "input": {"text": "The board declared a quarterly dividend of $0.85 per share, payable September 15.",
+                    "labels": ["positive", "neutral", "negative"]},
+          "expected_output": "neutral",
+          "metadata": {}
+        },
+        {
+          "id": "finpb-sample-004",
+          "task_type": "classification",
+          "input": {"text": "Q3 revenue grew 14% year-over-year, exceeding the high end of the company's prior guidance range.",
+                    "labels": ["positive", "neutral", "negative"]},
+          "expected_output": "positive",
+          "metadata": {}
+        },
+        {
+          "id": "finpb-sample-005",
+          "task_type": "classification",
+          "input": {"text": "Management announced a restructuring program expected to incur $80M in charges over the next two quarters.",
+                    "labels": ["positive", "neutral", "negative"]},
+          "expected_output": "negative",
+          "metadata": {}
+        },
+        {
+          "id": "finpb-sample-006",
+          "task_type": "classification",
+          "input": {"text": "The CFO is expected to provide an update on capital allocation at the November investor day.",
+                    "labels": ["positive", "neutral", "negative"]},
+          "expected_output": "neutral",
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "name": "convfinqa-sample",
+      "task_type": "multiturn_qa",
+      "description": "Multi-turn QA over financial reports — synthetic items shaped like ConvFinQA.",
+      "license": "Synthetic; replace with real ConvFinQA (MIT) for final eval.",
+      "source_url": "https://huggingface.co/datasets/czyssrs/ConvFinQA",
+      "items": [
+        {
+          "id": "convfinqa-sample-001",
+          "task_type": "multiturn_qa",
+          "input": {
+            "context": "Revenue by segment ($M): Cloud 1240, Devices 820, Services 460. Total revenue: 2520. Prior year totals: Cloud 980, Devices 870, Services 450.",
+            "turns": [
+              {"q": "What was the largest segment by revenue this year?"},
+              {"q": "What was its growth rate vs prior year?"},
+              {"q": "Which segment shrank?"}
+            ]
+          },
+          "expected_output": ["Cloud", 0.2653, "Devices"],
+          "metadata": {"per_turn_tolerance": [null, 0.005, null]}
+        },
+        {
+          "id": "convfinqa-sample-002",
+          "task_type": "multiturn_qa",
+          "input": {
+            "context": "Cash and equivalents: $3.2B. Short-term investments: $1.8B. Total debt: $4.5B. Interest expense: $185M annually.",
+            "turns": [
+              {"q": "What is total liquidity (cash + short-term investments)?"},
+              {"q": "What is net debt?"},
+              {"q": "What is the implied interest rate on total debt?"}
+            ]
+          },
+          "expected_output": [5.0, -0.5, 0.0411],
+          "metadata": {"per_turn_tolerance": [0.05, 0.05, 0.001], "answer_unit": ["usd_billions", "usd_billions", "ratio"]}
+        }
+      ]
+    },
+    {
+      "name": "sec-extraction-sample",
+      "task_type": "extraction",
+      "description": "Structured field extraction from 10-K excerpts. You build the real version from SEC EDGAR.",
+      "license": "Synthetic; build the real version yourself from EDGAR (public domain).",
+      "source_url": "https://www.sec.gov/edgar.shtml",
+      "items": [
+        {
+          "id": "sec-extraction-sample-001",
+          "task_type": "extraction",
+          "input": {
+            "document": "Form 10-K for the fiscal year ended December 31, 2025. ACME INDUSTRIES, INC. (Exact name of registrant as specified in its charter). Commission file number 001-39842. Delaware (State of incorporation). Total revenue for the fiscal year was $4,820 million, an increase of 14.5% from the prior year. Net income attributable to the company was $612 million, or $4.27 per diluted share.",
+            "fields": ["company_name", "fiscal_year_end", "state_of_incorporation", "revenue_usd_millions", "net_income_usd_millions", "diluted_eps_usd"]
+          },
+          "expected_output": {
+            "company_name": "ACME INDUSTRIES, INC.",
+            "fiscal_year_end": "2025-12-31",
+            "state_of_incorporation": "Delaware",
+            "revenue_usd_millions": 4820,
+            "net_income_usd_millions": 612,
+            "diluted_eps_usd": 4.27
+          },
+          "metadata": {}
+        },
+        {
+          "id": "sec-extraction-sample-002",
+          "task_type": "extraction",
+          "input": {
+            "document": "BRIGHTWATER TECHNOLOGIES, INC. — Annual Report Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 for the fiscal year ended March 31, 2026. Incorporated in Nevada. The company reported total net revenue of $1,205.4 million (FY26) compared to $987.2 million in the prior fiscal year. GAAP operating loss was $(42.8) million.",
+            "fields": ["company_name", "fiscal_year_end", "state_of_incorporation", "revenue_usd_millions", "operating_income_usd_millions"]
+          },
+          "expected_output": {
+            "company_name": "BRIGHTWATER TECHNOLOGIES, INC.",
+            "fiscal_year_end": "2026-03-31",
+            "state_of_incorporation": "Nevada",
+            "revenue_usd_millions": 1205.4,
+            "operating_income_usd_millions": -42.8
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}
