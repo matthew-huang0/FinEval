@@ -59,7 +59,7 @@ def make_questions(company: dict) -> list[dict]:
 
     questions = []
 
-    # --- Direct lookups ---
+    # direct look ups
     if revenue is not None:
         questions.append({
             "question": f"What was {name}'s total revenue in fiscal {fy}, in millions?",
@@ -78,7 +78,7 @@ def make_questions(company: dict) -> list[dict]:
                 "answer": str(f[key]),
             })
 
-    # --- Margin calculations (answers as decimals) ---
+    # margin calculations ( answers in decimals)
     if "net_income" in f and revenue:
         questions.append({
             "question": f"What was {name}'s net income as a proportion of total "
@@ -110,7 +110,7 @@ def make_questions(company: dict) -> list[dict]:
             "answer": f"{f['research_and_development'] / revenue:.5f}",
         })
 
-    # --- Segment / product share questions ---
+    # segment / product share questions
     segment_keys = {
         "iphone_sales": "iPhone",
         "services_sales": "Services",
@@ -130,7 +130,7 @@ def make_questions(company: dict) -> list[dict]:
                 "answer": f"{f[key] / revenue:.5f}",
             })
 
-    # --- Year over year growth ---
+    # year over year growth questions
     if "net_income" in f and "net_income" in prior and prior["net_income"] != 0:
         growth = (f["net_income"] - prior["net_income"]) / abs(prior["net_income"])
         questions.append({

@@ -5,11 +5,12 @@ Follows the same EvalItem structure as the other dataset loaders,
 so it flows through the runner, scorer, and leaderboard unchanged.
 """
 import json
+import os
 import sys
 
 from fineval.data_structures import EvalItem, TaskType
 
-CUSTOM_DATASET_PATH = "~/fineval/fineval/datasets/custom/custom_dataset.json"
+CUSTOM_DATASET_PATH = os.path.join(os.path.dirname(__file__), "custom", "custom_dataset.json")
 
 
 def load_custom(max_items: int = None) -> list[EvalItem]:

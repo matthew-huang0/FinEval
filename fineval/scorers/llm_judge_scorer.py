@@ -2,21 +2,19 @@
 LLMJudgeScorer.
 Uses a second AI model to grade the first AI model's answer.
 Useful for open ended questions where programmatic scoring falls short.
-Already defined in DataStructures.py as LLMJudgeScorer.
 """
 import os
-import sys
 
 from openai import OpenAI
 
 
 def get_judge_client(
-    base_url: str = "https://integrate.api.nvidia.com/v1"
+    base_url: str = "https://api.cerebras.ai/v1"
 ) -> OpenAI:
     """Set up the judge model client."""
-    api_key = os.environ.get("NVIDIA_API_KEY")
+    api_key = os.environ.get("CEREBRAS_API_KEY")
     if not api_key:
-        raise SystemExit("Set NVIDIA_API_KEY env var first")
+        raise SystemExit("Set CEREBRAS_API_KEY env var first")
     return OpenAI(base_url=base_url, api_key=api_key)
 
 
@@ -69,8 +67,8 @@ class LLMJudgeScorer:
 
     def __init__(
         self,
-        judge_model: str = "meta/llama-3.3-70b-instruct",
-        base_url: str = "https://integrate.api.nvidia.com/v1"
+        judge_model: str = "gpt-oss-120b",
+        base_url: str = "https://api.cerebras.ai/v1"
     ):
         self.judge_model = judge_model
         self.client = get_judge_client(base_url)
@@ -105,18 +103,3 @@ class LLMJudgeScorer:
             return 0.0, False
 
 
-if __name__ == "__main__":
-    print("LLMJudgeScorer test cases:\n")
-    print("Note: these require a live API connection and will be slow.")
-    print("Skipping live tests — judge scorer is ready to use.")
-    print()
-    print("Example usage:")
-    print()
-    print("from fineval.scorers.llm_judge_scorer import LLMJudgeScorer")
-    print("judge = LLMJudgeScorer()")
-    print("score, correct = judge.score(")
-    print("    question='What caused the revenue decline?',")
-    print("    expected='Lower sales volume',")
-    print("    predicted='Sales dropped causing revenue to fall'")
-    print(")")
-    print("print(score, correct)")

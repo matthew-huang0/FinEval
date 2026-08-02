@@ -57,7 +57,7 @@ def chart_accuracy_by_model():
     llm_models = ["gpt-oss-120b", "gemma-4-31b", "llama3.2:1b"]
     plot_df = df[df["model"].isin(llm_models)]
 
-    datasets = ["finpb", "finqa", "convfinqa"]
+    datasets = ["finpb", "finqa", "convfinqa", "custom"]
     x = np.arange(len(datasets))
     width = 0.25
 
@@ -74,7 +74,7 @@ def chart_accuracy_by_model():
     ax.set_ylabel("Accuracy (%)")
     ax.set_title("Accuracy by Model and Dataset")
     ax.set_xticks(x + width)
-    ax.set_xticklabels(["Financial PhraseBank", "FinQA", "ConvFinQA"])
+    ax.set_xticklabels(["Financial PhraseBank", "FinQA", "ConvFinQA", "Custom 10-K"])
     ax.legend()
     ax.set_ylim(0, 105)
     ax.grid(axis="y", alpha=0.3)
@@ -117,7 +117,7 @@ def chart_llm_vs_baseline():
 # -------------------------------------------------------------------
 def chart_accuracy_vs_latency():
     llm_models = ["gpt-oss-120b", "gemma-4-31b", "llama3.2:1b"]
-    plot_df = df[df["model"].isin(llm_models)]
+    plot_df = df[df["model"].isin(llm_models) & df["dataset"].isin(["finpb", "finqa", "convfinqa"])]
 
     summary = plot_df.groupby("model").agg(
         avg_accuracy=("accuracy", "mean"),

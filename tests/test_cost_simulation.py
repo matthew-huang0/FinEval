@@ -34,7 +34,7 @@ print(f"  Input tokens:  {typical_tokens_in}")
 print(f"  Output tokens: {typical_tokens_out}")
 print()
 
-# OpenAI GPT-4o pricing (as of 2024)
+# OpenAI GPT-4o pricing 
 # $5 per million input tokens = 500 cents per million
 # $15 per million output tokens = 1500 cents per million
 gpt4o_input_cost = 500.0
@@ -46,7 +46,7 @@ gpt4o_cost = calculate_cost(
     gpt4o_output_cost
 )
 
-# Anthropic Claude Sonnet pricing (as of 2024)
+# Anthropic Claude Sonnet pricing 
 # $3 per million input tokens = 300 cents per million
 # $15 per million output tokens = 1500 cents per million
 claude_input_cost = 300.0

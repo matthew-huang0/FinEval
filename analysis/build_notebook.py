@@ -16,7 +16,7 @@ def code(text):
     cells.append(nbf.v4.new_code_cell(text))
 
 
-# ---- Title ----
+# title
 md("""# FinEval — Exploratory Analysis
 
 This notebook explores the results of benchmarking three language models and two
@@ -35,7 +35,7 @@ Regression and with XGBoost) run on Financial PhraseBank for comparison.
 All language model results use a 500-item sample per dataset.""")
 
 
-# ---- Setup ----
+# setup
 md("## 1. Setup and Data Loading")
 code("""import json
 import glob
@@ -66,7 +66,7 @@ print(f'Loaded {len(df)} total result rows')
 df.head()""")
 
 
-# ---- Accuracy summary ----
+# accuracy summary
 md("""## 2. Accuracy by Model and Dataset
 
 The first question is simply how accurate each model is on each task. The table
@@ -88,7 +88,7 @@ central finding of the project. A 1-billion-parameter model can classify sentime
 but cannot perform financial calculation.""")
 
 
-# ---- Classical ML comparison ----
+# classical ML comparison
 md("""## 3. Language Models vs Classical Machine Learning
 
 Financial PhraseBank is the one task where classical machine learning can compete,
@@ -124,7 +124,7 @@ competitive. This is the kind of result that matters to a team deciding whether 
 task actually needs a large language model.""")
 
 
-# ---- Cost analysis ----
+# cost analysis
 md("""## 4. Cost and Token Efficiency
 
 The models were run for free, but in production they would cost money. Using
@@ -167,7 +167,7 @@ direct dollar cost. For a team choosing a model, the medium model delivers nearl
 the same accuracy at a fraction of the cost.""")
 
 
-# ---- Failure mode analysis ----
+# failure mode anlaysis
 md("""## 5. Failure Mode Analysis
 
 Accuracy numbers tell us how often each model is right, but not why it is wrong.
@@ -220,7 +220,7 @@ than a single accuracy number, because it separates task difficulty from model
 capability.""")
 
 
-# ---- Conclusion ----
+# conclusion
 md("""## 6. Summary of Findings
 
 1. **Model size matters enormously for numerical reasoning but little for

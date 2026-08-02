@@ -109,13 +109,14 @@ def leaderboard_to_markdown(leaderboard: Leaderboard) -> str:
     lines.append("|-------|---------|------|-------|----------|---------------|-------------|--------------|")
 
     for entry in sorted(leaderboard.entries, key=lambda e: (e.dataset_name, -e.accuracy)):
+        f1_display = f"{entry.mean_score:.4f}" if entry.task_type == TaskType.CLASSIFICATION else "—"
         lines.append(
             f"| {entry.model_id} "
             f"| {entry.dataset_name} "
             f"| {entry.task_type.value} "
             f"| {entry.n_items} "
             f"| {entry.accuracy*100:.2f}% "
-            f"| {entry.mean_score:.4f} "
+            f"| {f1_display} "
             f"| {entry.p50_latency_ms}ms "
             f"| {entry.total_cost_cents:.4f} |"
         )

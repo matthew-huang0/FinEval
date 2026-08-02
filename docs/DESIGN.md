@@ -560,3 +560,261 @@ on FinQA and 25 percent on ConvFinQA while performing acceptably at
 85 percent on classification. This defines a clear capability floor.
 A 1 billion parameter model is usable for simple classification but
 not for financial calculation.
+
+# Week 8 — Final Benchmarking, Cost Analysis, and Custom Dataset
+
+This section supersedes the Week 6 benchmark numbers. Week 7 was
+cancelled, so all remaining work was completed in Week 8. Where the
+results here differ from Week 6, these full-sample results govern. The
+earlier Week 6 numbers were correct for the 20-item sample they were run
+on; the numbers below come from a much larger sample and are the final,
+reported results.
+
+---
+
+## Sample Size Decision
+
+The Week 6 results used 20 items per dataset. My manager asked for a
+larger sample so the comparison against the classical baselines, which
+were tested on 453 items, would be fair.
+
+When I checked the full dataset sizes, they were far larger than
+expected: Financial PhraseBank has 2,264 items, FinQA has 6,251, and
+ConvFinQA has 8,891, for a total of over 17,000 items per model. Running
+all three models on the complete datasets would have taken roughly 50
+hours per model, because the large model is a reasoning model averaging
+about 11 seconds per item. That was not feasible within the timeline.
+
+I chose to run 500 items per dataset for every model instead. This is 25
+times the earlier sample, which makes the results statistically solid,
+and it is comparable to the 453-item test split the classical baselines
+used, which keeps the LLM versus baseline comparison fair. The
+statistical gain from 500 to the full dataset is marginal, while the time
+cost is enormous, so 500 is the point where the numbers are trustworthy
+without wasting days of runtime.
+
+---
+
+## Final Benchmark Results
+
+All three models were run on 500 items per dataset. The custom dataset,
+described below, was run on all 91 of its items.
+
+On Financial PhraseBank the large model scored 98.4 percent, the medium
+model 99.2 percent, and the small model 82.6 percent. XGBoost scored
+90.95 percent and Logistic Regression 87.86 percent on their 453-item
+test split.
+
+On FinQA the large model scored 69.8 percent, the medium model 63.2
+percent, and the small model 2.8 percent.
+
+On ConvFinQA the large model scored 80.4 percent, the medium model 81.8
+percent, and the small model 19.6 percent.
+
+On the custom SEC 10-K dataset the large model scored 90.1 percent, the
+medium model 98.9 percent, and the small model 45.1 percent.
+
+The larger sample changed the numbers meaningfully from the 20-item
+Week 6 run. ConvFinQA dropped from the low nineties to the low eighties,
+and FinQA dropped from the seventies and eighties into the sixties and
+seventies. This is expected: the small 20-item sample happened to catch
+easier items, and the 500-item numbers are the honest, stable measure.
+
+---
+
+## Findings
+
+The medium model matches or beats the large model on three of the four
+datasets, trailing only on FinQA. On Financial PhraseBank and the custom
+dataset the medium model is actually ahead. This makes the medium model
+the practical winner, since it delivers essentially the same accuracy as
+the large model.
+
+The small model performs acceptably on classification, at 82.6 percent
+on Financial PhraseBank, but collapses on numerical reasoning, scoring
+2.8 percent on FinQA and 19.6 percent on ConvFinQA. This defines a clear
+capability floor. A 1 billion parameter model can classify sentiment but
+cannot do financial calculation.
+
+XGBoost at 90.95 percent beats the small language model at 82.6 percent
+on sentiment classification and comes within about nine points of the
+frontier models, while running instantly at zero cost with no internet
+connection. For this task a traditional algorithm from decades ago is
+genuinely competitive.
+
+The custom dataset independently reproduces these findings on novel
+primary-source data, which strengthens confidence that they are real
+properties of the models rather than artifacts of the public datasets.
+
+---
+
+## Cost Analysis and Methodology
+
+The models were run for free, on the Cerebras free tier and locally
+through Ollama, so no money was actually spent. To produce a meaningful
+cost comparison, I priced each model at reference market rates, meaning
+what it would cost to run on a paid host. This is computed by a separate
+analysis script that reads the token counts captured during the
+benchmark and multiplies them by each model's published price per
+million tokens.
+
+Keeping the cost estimate separate from the runner is deliberate. It
+keeps the actual cost paid, which was zero, distinct from the market
+estimate, which is a projection. The result files record what actually
+happened, including a real cost of zero, and the analysis layer computes
+what it would have cost in production.
+
+The reference prices used are 0.35 dollars input and 0.75 dollars output
+per million tokens for the large model, 0.08 and 0.16 for the medium
+model, and 0.02 and 0.04 for the small model. Two of these are
+approximations, documented in the analysis script: the medium model uses
+its predecessor's published rate as a proxy since the newer model is not
+yet broadly priced, and the small model's output rate is estimated at
+roughly twice its input rate.
+
+The cost analysis covers the three standard datasets at a uniform 500
+items each, or 1,500 items per model. The custom dataset is held out of
+the cost comparison so the basis stays uniform.
+
+---
+
+## Cost Findings
+
+The large model costs about 6.7 times more than the medium model for
+roughly a 1.5 point accuracy difference. Priced at market rates, running
+1,500 items cost 0.67 dollars for the large model, 0.10 dollars for the
+medium model, and 0.02 dollars for the small model.
+
+The reason for the gap is visible in the token counts. The large model
+is a reasoning model and generated about 345,000 output tokens across
+the run, against roughly 10,000 for the medium model, a 35 times
+difference. Output tokens are the main driver of cost, so the reasoning
+model's verbosity is what makes it expensive, not a higher per-token
+price. This is a concrete, measurable cost to using a reasoning model on
+tasks where a non-reasoning model reaches nearly the same accuracy.
+
+---
+
+## Custom SEC 10-K Dataset
+
+The custom dataset is a stretch goal. It is built from the fiscal year
+2023 annual reports of nine large public companies spanning six
+industries, sourced from SEC EDGAR. It contains 91 FinQA-style numerical
+questions, some direct lookups and some calculations such as margins and
+year-over-year growth rates.
+
+Every answer is computed in Python directly from verified figures rather
+than generated by a model, so each answer is correct by construction and
+traceable to its source. Every figure was verified against the original
+SEC filing. The verification found one error, a Nike operating income
+figure recorded as 5,920 million when the correct value is 5,915 million,
+which was corrected and the dataset regenerated. All other figures across
+all nine companies matched the filings exactly.
+
+The full methodology is documented separately in
+custom-dataset-methodology.md. The purpose of the dataset is to test the
+models on data they could not have memorized and to demonstrate that the
+tool can be pointed at freshly sourced primary data rather than only
+pre-existing benchmarks.
+
+---
+
+## Design Questions
+
+The project scope poses five methodology questions. All five are
+addressed below. The first is answered in depth across the Week 3,
+Week 5, and Week 6 scoring and normalizer sections; it is restated and
+summarized here so this section stands on its own.
+
+### Scoring methodology and equivalence
+
+The question is how to decide when a predicted answer counts as equal to
+the expected answer, given that models phrase answers in many ways. The
+approach is a standalone normalizer that all scorers share. It strips
+formatting such as currency symbols, commas, and extra words, then
+compares the numbers with tolerances that fit the task: a small relative
+tolerance for rounding, a scaled tolerance for the implicit-percentage
+case where a model answers 53.2 for an expected 0.53232, and million-scale
+detection for answers written in full units versus millions. Every rule
+applies equally to all models, so the normalizer changes how answers are
+compared, never which model wins. The full reasoning, including the
+guardrails that stop coincidental matches from being credited, is in the
+Week 6 normalizer section.
+
+### Prompt engineering versus evaluation purity
+
+Every model receives a zero-shot prompt. No examples are provided before
+the question, and no chain of thought is explicitly requested. The prompt
+structure is identical across all models for any given item; the only
+thing that changes between models is the model name passed at the command
+line. This is the core requirement for a fair benchmark, because if one
+model received a better prompt than another, the comparison would measure
+prompt quality rather than model quality.
+
+Zero-shot was chosen over few-shot for two reasons. First, choosing
+few-shot examples would inevitably favor some models over others
+depending on how well the examples matched their training. Second,
+zero-shot reflects how a team would most realistically deploy these
+models, without hand-crafting examples for every question type.
+
+Two of the three models are reasoning models that produce internal
+reasoning regardless of the prompt. This is a limitation rather than a
+choice: the models differ not only in size but in whether they reason
+before answering, so the comparison is not a clean isolation of scale.
+This is documented rather than hidden.
+
+### Determinism
+
+Temperature is set to 0.0 for every call, making the output as close to
+deterministic as the API allows. One sample is run per item. Running
+multiple samples per item and averaging would give a better estimate of
+the true accuracy and would quantify run-to-run variance, but it would
+multiply the number of API calls without changing the headline findings.
+
+The honest limitation is that a single sample does not measure variance.
+With 500 items per dataset, a single item swinging changes the accuracy
+by 0.2 points, so the larger sample makes the results stable enough that
+small differences between models, such as 80.4 versus 81.8, should be
+read as roughly equal rather than as a definite ranking.
+
+### Baseline fairness
+
+This is the hardest methodological question in the project, because the
+comparison is not apples to apples and cannot be made so. The classical
+baselines were trained on 1,811 labeled Financial PhraseBank examples and
+tested on the remaining 453. The language models were given no training
+examples and, in the final run, were tested on 500 items.
+
+The comparison is defensible on two grounds. First, it compares each
+approach as it would realistically be deployed. A team using XGBoost
+would train it on labeled data, because that is what XGBoost requires. A
+team using a language model would most likely use it zero-shot, because
+that is its main appeal. Comparing a trained XGBoost against a zero-shot
+language model is therefore the actual choice a team faces, not a flaw in
+the design.
+
+Second, the write-up is explicit about what the comparison does not show.
+It does not tell you which approach is fundamentally more capable, and it
+does not control for training data. The finding that survives these
+caveats is that XGBoost is competitive with the frontier models and beats
+the small model on classification, at zero cost, which is a genuine and
+useful result for a team deciding whether a task needs a language model
+at all.
+
+### Cost and quality visualization
+
+The scope asks how to show a large cost difference for a small accuracy
+gain. With an all-free model set this was initially impossible, because
+cost was zero for every model and a cost axis would carry no signal.
+Early versions used latency as the efficiency axis instead, since latency
+is where the models differ and in a paid setting it correlates with cost.
+
+The final version prices the models at reference market rates, which
+gives a real cost axis. The cost versus accuracy chart plots dollar cost
+against average accuracy, and the token versus accuracy chart plots
+output tokens against average accuracy. The token chart is the more
+revealing of the two, because it makes the reasoning model's verbosity
+visible: the large model sits far to the right on output tokens while
+reaching almost the same accuracy as the medium model, which is the
+clearest way to show that the extra cost buys very little.
+

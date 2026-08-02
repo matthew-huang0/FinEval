@@ -12,3 +12,9 @@ __pycache__/
 # local backups (keep locally, don't publish)
 results-backup-20item/
 results-week7-custom/
+# build metadata (auto-generated)
+fineval.egg-info/
+
+# internal internship docs (not for public repo)
+docs/SPEC.md
+docs/reports/

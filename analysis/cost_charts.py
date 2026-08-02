@@ -21,9 +21,8 @@ colors = {
 }
 
 
-# -------------------------------------------------------------------
 # Chart 1 - Model dollar cost vs accuracy
-# -------------------------------------------------------------------
+
 def chart_cost_vs_accuracy():
     fig, ax = plt.subplots(figsize=(11, 7))
 
@@ -72,10 +71,7 @@ def chart_cost_vs_accuracy():
     print("Saved results/chart-cost-vs-accuracy.png")
     plt.close()
 
-
-# -------------------------------------------------------------------
 # Chart 2 - Token usage vs accuracy (reveals verbosity)
-# -------------------------------------------------------------------
 def chart_tokens_vs_accuracy():
     fig, ax = plt.subplots(figsize=(11, 7))
 

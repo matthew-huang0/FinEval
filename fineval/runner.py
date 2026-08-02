@@ -3,11 +3,8 @@ FinEval Runner.
 Sends questions to an AI model in a continuous loop,
 scores the responses, and returns a list of results.
 """
-from email.mime import message
 import os
-import sys
 import time
-from urllib import response
 
 from openai import OpenAI
 from datetime import datetime
@@ -15,12 +12,15 @@ from fineval.data_structures import EvalItem, EvalResult, LLMResponse, TaskType
 from fineval.scorers.numerical_scorer import NumericalScorer
 from fineval.scorers.classification_scorer import ClassificationScorer
 
-# set up scorers
 numerical_scorer = NumericalScorer()
 classification_scorer = ClassificationScorer()
 
-# set up the NVIDIA API client
-def get_client(base_url: str = "https://integrate.api.nvidia.com/v1") -> OpenAI:
+
+def get_client(base_url: str = "https://api.cerebras.ai/v1") -> OpenAI:
+    """
+    Build an OpenAI-compatible client. The base_url selects the provider
+    (Cerebras, Ollama, or NVIDIA); the SDK and call signatures are identical.
+    """
     api_key = os.environ.get("CEREBRAS_API_KEY") or os.environ.get("NVIDIA_API_KEY")
     if not api_key:
         raise SystemExit("Set CEREBRAS_API_KEY or NVIDIA_API_KEY env var first")
@@ -38,7 +38,7 @@ def build_prompt(item: EvalItem) -> str:
         )
     elif item.task_type == TaskType.NUMERICAL_QA:
         expected = str(item.expected_output).lower().strip()
-        # include the question if the item has one stored separately
+        # FinQA items store the question apart from the context; ConvFinQA items do not
         question = item.input.get('question', '')
         question_line = f"\n\nQuestion: {question}" if question else ""
         if expected in ["yes", "no"]:
@@ -59,24 +59,26 @@ def build_prompt(item: EvalItem) -> str:
         )
     else:
         return str(item.input)
-    
+
+
 def call_model(client: OpenAI, model_id: str, prompt: str, retries: int = 10) -> tuple[str, int, int, int]:
     """
     Send a prompt to the model and return the response.
-    Retries automatically if rate limited.
+    Retries on any API error, not just rate limits.
     Returns (response_text, latency_ms, tokens_in, tokens_out).
     """
     for attempt in range(retries):
         try:
             start = time.time()
             response = client.chat.completions.create(
-                 model=model_id,
-                 messages=[{"role": "user", "content": prompt}],
+                model=model_id,
+                messages=[{"role": "user", "content": prompt}],
                 temperature=0.0,
                 max_tokens=2048,
             )
             latency_ms = int((time.time() - start) * 1000)
             message = response.choices[0].message
+            # reasoning models put their answer in .reasoning when .content is empty
             raw_text = message.content or message.reasoning or ""
             return (
                 raw_text.strip(),
@@ -86,7 +88,7 @@ def call_model(client: OpenAI, model_id: str, prompt: str, retries: int = 10) ->
             )
         except Exception as e:
             if attempt < retries - 1:
-                print(f"   Error: {e}. Retrying in 5 seconds...")
+                print(f"   Error: {e}. Retrying in 15 seconds...")
                 time.sleep(15)
             else:
                 return f"ERROR: {e}", 0, 0, 0
@@ -104,13 +106,13 @@ def run_eval(
     items: list[EvalItem],
     model_id: str,
     dataset_name: str,
-    base_url: str = "https://integrate.api.nvidia.com/v1",
+    base_url: str = "https://api.cerebras.ai/v1",
     cost_per_million_input: float = 0.0,
     cost_per_million_output: float = 0.0,
 ) -> list[EvalResult]:
     """
     Run the evaluation loop.
-    Sends every item to the model continuously without stopping.
+    A failed item is recorded as an error result rather than aborting the run.
     Returns a list of EvalResult objects.
     """
     client = get_client(base_url)
@@ -125,7 +127,6 @@ def run_eval(
         raw_text, latency_ms, tokens_in, tokens_out = call_model(client, model_id, prompt)
         score, is_correct = score_item(item, raw_text)
 
-        # calculate real cost based on token counts
         input_cost = (tokens_in / 1_000_000) * cost_per_million_input
         output_cost = (tokens_out / 1_000_000) * cost_per_million_output
         total_cost = input_cost + output_cost
@@ -161,32 +162,30 @@ def run_eval(
         print(f"   cost: {total_cost:.6f} cents")
         print()
 
+        # stay under provider rate limits
         time.sleep(0.5)
 
     return results
+
+
 def print_metrics(results: list[EvalResult], dataset_name: str, model_id: str):
     """
     Calculate and print evaluation metrics after a benchmark run.
     Includes accuracy, F1 score, average latency, and total cost.
     """
     from sklearn.metrics import f1_score
-    import numpy as np
 
     if not results:
         print("No results to evaluate.")
         return
 
-    # calculate accuracy
     total = len(results)
     correct = sum(1 for r in results if r.is_correct)
     accuracy = correct / total * 100
 
-    # calculate F1 score
-    # collect expected and predicted labels
     expected_labels = [str(r.expected).lower().strip() for r in results]
     predicted_labels = [r.response.raw_text.lower().strip() for r in results]
 
-    # get unique labels
     unique_labels = list(set(expected_labels))
 
     try:
@@ -194,14 +193,11 @@ def print_metrics(results: list[EvalResult], dataset_name: str, model_id: str):
     except Exception:
         f1 = 0.0
 
-    # calculate average latency
     latencies = [r.response.latency_ms for r in results]
     avg_latency = int(sum(latencies) / len(latencies))
 
-    # calculate total cost
     total_cost = sum(r.response.cost_cents for r in results)
 
-    # print summary
     print("\n" + "=" * 50)
     print("RESULTS SUMMARY")
     print("=" * 50)

@@ -148,9 +148,8 @@ def normalize_and_compare(
             return 1.0, True
 
 # implicit percentage detection
-    # if expected is a decimal between -1 and 1, and predicted looks like
-    # a percentage version of it, mark correct. handles models that answer
-    # 53.2 when the expected is 0.53232.
+    # if expected is a decimal between -1 and 1, and predicted looks like a percentage version of it, mark correct. handles models that answer 53.2 
+    # when the expected is 0.53232.
     # uses a tighter tolerance to avoid crediting coincidental 100x matches.
     if not pred_is_pct and not exp_is_pct:
         if -1.0 <= exp_value <= 1.0 and abs(pred_value) > 1.0:
@@ -160,8 +159,7 @@ def normalize_and_compare(
                 return 1.0, True
 
     # million scale mismatch detection
-    # if the model answered in full units (3800000) but expected is in
-    # millions (3.8), or vice versa, check if dividing by 1 million matches.
+    # if the model answered in full units (3800000) but expected is in millions (3.8), or vice versa, check if dividing by 1 million matches.
     # handles "$3.8 million" being read as 3800000 when expected is 3.8
     if pred_value != 0 and exp_value != 0:
         if values_are_close(pred_value / 1_000_000, exp_value, tolerance):

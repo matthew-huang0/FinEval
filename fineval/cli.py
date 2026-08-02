@@ -3,7 +3,7 @@ FinEval CLI.
 Run a full benchmark from the command line with a single command.
 
 Usage:
-    python3 -m fineval.cli --model meta/llama-3.3-70b-instruct --datasets finqa,finpb,convfinqa --max-items 20 --out results/benchmark.json
+    python3 -m fineval.cli --model gpt-oss-120b --datasets finqa,finpb,convfinqa --max-items 20 --out results/benchmark.json
 """
 import argparse
 import json
@@ -60,7 +60,8 @@ def save_results(results, path: str):
 def get_default_costs(provider: str, model: str) -> tuple[float, float]:
     """
     Return default cost per million tokens (input, output) based on provider and model.
-    Returns (0.0, 0.0) for free tier models.
+    Free tier models and any provider/model combination not listed return (0.0, 0.0),
+    so an unrecognised model reports zero cost rather than failing.
     """
     pricing = {
         "cerebras": {
@@ -93,19 +94,19 @@ def main():
     parser.add_argument(
         "--model",
         type=str,
-        default="meta/llama-3.3-70b-instruct",
+        default="gpt-oss-120b",
         help="Model ID to benchmark"
     )
     parser.add_argument(
         "--provider",
         type=str,
-        default="nvidia",
-        help="Provider name e.g. nvidia, cerebras, openai, anthropic"
+        default="cerebras",
+        help="Provider name e.g. cerebras, ollama, openai, nvidia"
     )
     parser.add_argument(
         "--base-url",
         type=str,
-        default="https://integrate.api.nvidia.com/v1",
+        default="https://api.cerebras.ai/v1",
         help="API base URL"
     )
     parser.add_argument(
@@ -124,7 +125,7 @@ def main():
         "--datasets",
         type=str,
         default="finpb,finqa,convfinqa",
-        help="Comma separated list of datasets: finpb, finqa, convfinqa"
+        help="Comma separated list of datasets: finpb, finqa, convfinqa, custom"
     )
     parser.add_argument(
         "--max-items",
@@ -141,7 +142,7 @@ def main():
 
     args = parser.parse_args()
 
-    # auto set costs based on provider and model unless explicitly provided
+    # -1.0 means the flag was not passed, so fall back to the pricing table
     default_input_cost, default_output_cost = get_default_costs(args.provider, args.model)
     if args.cost_per_million_input_tokens < 0:
         args.cost_per_million_input_tokens = default_input_cost
