@@ -237,9 +237,6 @@ percentages as decimals. For example 14.5% should be written as
 - How will the medium and small models compare to the large model?
 - Will XGBoost beat the large model on Financial PhraseBank?
 
-Here is the full Week 5 section for DESIGN.md:
-
-```markdown
 # Week 5 — Normalization, Baselines, LLM Judge, and CLI Updates
 
 ## What I Built This Week

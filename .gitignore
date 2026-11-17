@@ -15,6 +15,5 @@ results-week7-custom/
 # build metadata (auto-generated)
 fineval.egg-info/
 
-# internal internship docs (not for public repo)
-docs/SPEC.md
-docs/reports/
+# secrets
+.env
